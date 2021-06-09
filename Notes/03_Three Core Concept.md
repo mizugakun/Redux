@@ -7,11 +7,11 @@
 * Customer -- Buy a cake
 
 ## Entities - Activities in Redux:
-* *Store*
-* *Reducer* -- change the state in the store
-* Application -- Make an *Action*
+* **Store**
+* **Reducer** -- change the state in the store
+* Application -- Make an **Action**
 
 ## Definition
-* A *store* that holds the states of your application
-* An *action* that describe the changes in the states of the application
-* A *reducer* which actually carries out the state transistion depending on the action.
+* A **store** that holds the states of your application
+* An **action** that describe the changes in the states of the application
+* A **reducer** which actually carries out the state transistion depending on the action.
