@@ -1,10 +1,10 @@
+// we need to use 'require' sytax to import thr library due to this is a simple JavaScript app
 const redux = require('redux')
+// create redux store
 const createStore = redux.createStore;
 
-// implement another reducer
-
+// Action
 const BUY_CAKE = 'BUY_CAKE'
-const BUY_ICE_CREAM = 'BUY_ICE_CREAM'
 function buyCake() {
     return (
         {
@@ -13,46 +13,16 @@ function buyCake() {
         }
     )
 }
-function buyIceCream() {
-    return (
-        {
-            type: BUY_ICE_CREAM,
-            info: 'second redux action'
-        }
-    )
-}
 
-// the initial state for the app
-const initialCakeState = {
+// Reducer
+const initialState = {
     numOfCakes: 10
 }
-const initialIceCreamState = {
-    numOfIceCream: 20
-}
-
-// set the initail state by the reducer
-// (previousState, action) => newState
-const cakeReducer = (state = initialCakeState, action) => {
-    // use switch to decide what should we do depending action's type
+const reducer = (state = initialState, action) => {
     switch(action.type) {
-    
-        // use {...state} to pass the rest of the state
         case BUY_CAKE: return {
             ...state,
             numOfCakes: state.numOfCakes - 1
-        }
-
-        default: return state
-    }
-}
-const iceCreamReducer = (state = initialIceCreamState, action) => {
-    // use switch to decide what should we do depending action's type
-    switch(action.type) {
-    
-        // use {...state} to pass the rest of the state
-        case BUY_ICE_CREAM: return {
-            ...state,
-            numOfIceCream: state.numOfIceCream - 1
         }
 
         default: return state
