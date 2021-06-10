@@ -8,3 +8,5 @@ function buyCake() {
         }
     )
 }
+
+export {buyCake}
