@@ -49,10 +49,13 @@ const iceCreamReducer = (state = initialIceCreamState, action) => {
     }
 }
 
+// create a root reducer to combine other reducers
 const rootReducer = combineReducers({
     cake: cakeReducer,
     iceCream: iceCreamReducer
 })
+
+// pass the root reducer to createStore method
 const store = createStore(rootReducer)
 console.log("initial state", store.getState())
 const unsubscribe = store.subscribe(() => console.log("Update state", store.getState()))
