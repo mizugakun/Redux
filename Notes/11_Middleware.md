@@ -13,7 +13,7 @@
 * Pass `applyMiddleware(logger)` into `createStore` as the second pareameter to apply the middleware
 
 ## Code
-```javascript=
+```javascript
 // include the redux-logger package
 const reduxLogger = require('redux-logger')
 

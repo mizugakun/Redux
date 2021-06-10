@@ -9,7 +9,7 @@
     `npm install redux`: install redux dependency in the project
 4. Create `index.js` JavaScript file to write the code
 5. Write the following code in `index.js`:
-```javascript=
+```javascript
 console.log('From index js')
 ```
 6. type following commands: `node index`

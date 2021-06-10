@@ -32,7 +32,7 @@ Reducer - (previousState, action) => newState
 
 **Cake Shop**
 *Reducer is the shopkeeper*
-```javascript=
+```javascript
 const reducer = (state, action) => {
     switch(action.type) {
         case: BUY_CAKE: return {

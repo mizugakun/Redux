@@ -11,7 +11,7 @@ Asyncronous API calls to fetch data from an end point and use data in your appli
 ## example application
 * Fetches a list of users from an API end point and stores it in the redux store.
 * ***State***
-```javascript=
+```javascript
 state={
     loading: true,
     data:[],

@@ -5,7 +5,7 @@
 Redux provide `CombineReducers` method to combine multiple reducers into one single reducer which can be then passed to `createStore(reducer)` method.
 
 ### Code
-```javascript=
+```javascript
 // create an object to store combineReducers method
 const combineReducers = redux.combineReducers
 

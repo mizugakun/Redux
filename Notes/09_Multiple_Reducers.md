@@ -5,7 +5,7 @@ We definitely could add a new action, and expand the switch cases in the reducer
 In this example, a shopkeeper who sell cakes shouldn't sell ice cream. Therefore, there will be another shopkeeper(eg. reducer) who is resposible for selling ice cream.
 
 ## Add another action
-```javascript=
+```javascript
 const BUY_ICE_CREAM = 'BUY_ICE_CREAM'
 function buyCake() {
     return (
@@ -17,14 +17,14 @@ function buyCake() {
 }
 ```
 ## Add another initial state
-```javascript=
+```javascript
 const initialIceCreamState = {
     numOfIceCream: 20
 }
 ```
 
 ## Add another initial state reducer
-```javascript=
+```javascript
 const iceCreamReducer = (state = initialIceCreamState, action) => {
     // use switch to decide what should we do depending action's type
     switch(action.type) {
