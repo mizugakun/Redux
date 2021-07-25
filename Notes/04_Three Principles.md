@@ -3,6 +3,7 @@
 
 ## First Principle
 ***The state of you application is stored in one object within a single store***
+
 Maintain our application state in a single object which would be managed by Redux store
 
 **Cake Shop**:
